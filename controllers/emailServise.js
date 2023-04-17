@@ -5,7 +5,7 @@ console.log('EMAIL', EMAIL);
 
 const sendEmail = (email, verificationToken) => {
   const transporter = nodemailer.createTransport({
-    host: 'smtp.ukr.net',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
@@ -27,10 +27,10 @@ const sendEmail = (email, verificationToken) => {
      width: 100%;
       text-align: center;
     ">
-    Back to So Yummy :) 
+    Back to So Yummy :)
     </b>
        <p style='text-align:center;'>
-    <a href="https://dariatufar.github.io/command_project_React_Node/welcome" 
+    <a href="https://dariatufar.github.io/command_project_React_Node/welcome"
     style=
     'background-color: #8BAA36;
      color: white;
