@@ -60,15 +60,11 @@ const logIn = async (req, res) => {
   const currentTime = new Date();
   const timeElapsed = convertMS(currentTime.getTime() - createdAt.getTime());
   if (timeElapsed >= 10) {
-    const notificationSent = localStorage.getItem('notificationSent');
-    if (!notificationSent) {
-      sendMotivation(
-        user._id,
-        'You have been using the application for 10 days!',
-        3000
-      );
-      localStorage.setItem('notificationSent', true);
-    }
+    sendMotivation(
+      user._id,
+      'You have been using the application for 10 days!',
+      3000
+    );
   }
   res.status(200).json({
     token,
