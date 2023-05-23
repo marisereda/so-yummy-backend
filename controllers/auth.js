@@ -14,7 +14,7 @@ const register = async (req, res) => {
   }
   const hashPassword = bcrypt.hashSync(password, bcrypt.genSaltSync(10));
   const avatarUrl =
-    'https://res.cloudinary.com/dsseiacfv/image/upload/v1680621422/avatars/rgvildvqnsh1qqyiibhx.jpg';
+    'https://res.cloudinary.com/diaxwbc3c/image/upload/v1684856642/icon-avatar_rofykw.png';
   await User.create({
     name,
     email,
